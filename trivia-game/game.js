@@ -12,22 +12,131 @@ const SITCOM_LOGOS = {
   "Taarak Mehta ka Ooltah Chashma": "logos/tmkoc.png"
 };
 const ALL_TOPICS = [
-  { name: "Modern Family", questions: { 10: [{q: "What planet is known as the Red Planet?", a: "Mars"}], 20: [{q: "What is the chemical symbol for water?", a: "H2O"}], 50: [{q: "What gas do plants absorb from the atmosphere?", a: "Carbon dioxide"}] } },
-  { name: "Brooklyn Nine-Nine", questions: { 10: [{q: "Who was the first President of the USA?", a: "George Washington"}], 20: [{q: "In which year did World War II end?", a: "1945"}], 50: [{q: "Who wrote the Declaration of Independence?", a: "Thomas Jefferson"}] } },
-  { name: "The Office", questions: { 10: [{q: "How many players in a soccer team?", a: "11"}], 20: [{q: "Which country won the 2018 FIFA World Cup?", a: "France"}], 50: [{q: "Who has won the most Olympic gold medals?", a: "Michael Phelps"}] } },
-  { name: "How I Met Your Mother", questions: { 10: [{q: "What is the largest ocean on Earth?", a: "Pacific"}], 20: [{q: "Which country has the most population?", a: "China"}], 50: [{q: "What is the capital of Iceland?", a: "Reykjavik"}] } },
-  { name: "Friends", questions: { 10: [{q: "Who played Harry Potter?", a: "Daniel Radcliffe"}], 20: [{q: "Which movie won Best Picture Oscar in 2020?", a: "Parasite"}], 50: [{q: "Who directed 'Inception'?", a: "Christopher Nolan"}] } },
+  { name: "Modern Family", questions: { 
+    10: [
+        {q: "What is the name of Jay's ex wife?", a: "DeDe"},
+        {q: "What country does Gloria come from?", a: "Columbia"},
+        {q: "What is the name of the business where Claire works with her father?", a: "Pritchett's Closets"}
+    ], 
+    20: [{q: "What is Cam's clown alter ego called?", a: "Fizbo"},
+         {q: "What is Alex Dunphy's job?", a: "Academic Researcher"},
+         {q: "As well as being a real estate agent, Phil owns what type of shop?", a: "Magic Shop"}
+    ], 
+    50: [{q: "Who officiated Mitch and Cam's wedding?", a: "Phil"},
+         {q: "What was the name of Claire and Mitchell's childhood ice-skating duo?", a: "Fire and Nice"},
+         {q: "Cam partners with Gloria to start a buisness selling _____", a: "Hot Sauce"}
+    ] } },
+  { name: "Brooklyn Nine-Nine", questions: {
+    10: [{q: "What's the Pontiac Bandit's real name?", a: "Doug Judy"}, 
+         {q: "What is the name of Charles Boyle's son?", a: "Nikolaj"},
+         {q: "What is Gina's last name?", a: "Linetti"}         
+    ], 
+    20: [{q: "What is the name of Captain Holt's arch rival?", a: "Madeline Wuntch"},
+         {q: "What is Scully's first name?", a: "Norm"},
+         {q: "What is Hitchcock's first name?", a: "Michael"}
+    ], 
+    50: [{q: "Who did NOT win a halloween heist?", a: "Charles"},
+         {q: "What were Jake and Holt's names while living in Florida?", a: "Larry and Greg"},
+         {q: "What does Rosa's landlord think her name is?", a: "Emily Goldfinch"}
+    ] } },
+  { name: "The Office", questions: { 
+    10: [{q: "What is the name of Jan's candle company?", a: "Serenity by Jan"},
+         {q: "What vegetable does Dwight grow and sell at Schrute Farms?", a: "Beets"},
+         {q: "What iconic landmark do Jim and Pam get married by?", a: "Niagara Falls"}
+    ], 
+    20: [{q: "What is the name of Michael Scott's movie?", a: "Threat Level Midnight"},
+         {q: "What was the name of Angela's cat that was killed by Dwight?", a: "Sprinkles"},
+         {q: "What is Oscar's job at Dunder Mifflin?", a: "Accountant"}
+    ], 
+    50: [{q: "What is Creed's job at Dunder Mifflin?", a: "Quality Assurance Manager"},
+         {q: "What is the name of the cover band Kevin plays in?", a: "Scrantonicity"},
+         {q: "What country does Toby leave Dunder Mifflin to visit?", a: "Costa Rica"} 
+    ] } },
+  { name: "How I Met Your Mother", questions: {
+    10: [
+      {q: "What college did Ted, Lily and Marshall all attend?", a: "Wesleyan University"},
+      {q: "What year is it supposed to be when Ted is telling his two kids about how he met their mom?", a: "2030"},
+      {q: "What is Lily's last name?", a: "Aldrin"}
+    ],
+    20: [
+      {q: "What is Marshall's nickname?", a: "Big Fudge"},
+      {q: "How many kids did Lily and Marshall end up having?", a: "Three"},
+      {q: "Who did Barney end up marrying?", a: "Robin"}
+    ],
+    50: [
+      {q: "Which character had a stripper doppelganger?", a: "Lily"},
+      {q: "True or false: The Bro Code is a set of rules (i.e., male etiquette) established by Barney.", a: "True"},
+      {q: "What are the names of Ted's children?", a: "Luke and Penny"}
+    ]
+  } },
+  { name: "Friends", questions: {
+    10: [
+      {q: "Who does Ross marry in Las Vegas?", a: "Rachel"},
+      {q: "What is Phoebe's sister called?", a: "Ursula"},
+      {q: "What is Rachel wearing when she first appears in the 'Pilot' episode?", a: "Wedding Dress"}
+    ],
+    20: [
+      {q: "Who teaches Rachel and Phoebe about 'Unagi'?", a: "Ross"},
+      {q: "Which friend of her parents does Monica date?", a: "Richard"},
+      {q: "What is Monica's job?", a: "Chef"}
+    ],
+    50: [
+      {q: "What is Rachel's favourite movie?", a: "Weekend at Bernie's"},
+      {q: "When Ben shows up with a Barbie doll, what doll does Ross want him to play with instead?", a: "GI Joe"},
+      {q: "Who is Regina Philange?", a: "Phoebe"}
+    ]
+  } },
   { name: "Seinfeld", questions: { 10: [{q: "Who is known as the King of Pop?", a: "Michael Jackson"}], 20: [{q: "Which band sang 'Hey Jude'?", a: "The Beatles"}], 50: [{q: "Who composed the Four Seasons?", a: "Vivaldi"}] } },
   { name: "Two and a Half Men", questions: { 10: [{q: "Who wrote 'Romeo and Juliet'?", a: "Shakespeare"}], 20: [{q: "Who is the author of 'Harry Potter'?", a: "J.K. Rowling"}], 50: [{q: "Who wrote 'War and Peace'?", a: "Leo Tolstoy"}] } },
-  { name: "The Big Bang Theory", questions: { 10: [{q: "What does 'CPU' stand for?", a: "Central Processing Unit"}], 20: [{q: "Who founded Microsoft?", a: "Bill Gates"}], 50: [{q: "What year was the first iPhone released?", a: "2007"}] } },
-  { name: "Taarak Mehta ka Ooltah Chashma", questions: { 10: [{q: "What fruit is used to make wine?", a: "Grape"}], 20: [{q: "Which country is famous for sushi?", a: "Japan"}], 50: [{q: "What is the main ingredient in hummus?", a: "Chickpeas"}] } }
+  { name: "The Big Bang Theory", questions: {
+    10: [
+      {q: "What's Sheldon's middle name?", a: "Lee"},
+      {q: "How are Sheldon and Missy related?", a: "twins"},
+      {q: "Where did Leonard go to college?", a: "Princeton"}
+    ],
+    20: [
+      {q: "Which city in California is the show set in?", a: "Pasadena"},
+      {q: "What state is Penny originally from?", a: "Nebraska"},
+      {q: "What did Howard and Bernadette name their daughter?", a: "Halley"}
+    ],
+    50: [
+      {q: "Who was Sheldon's childhood best friend?", a: "Tam"},
+      {q: "Howard and Amy bonded over their mutual love of what singer?", a: "Neil Diamond"},
+      {q: "What nickname did Howard's fellow astronauts give him?", a: "Froot Loops"}
+    ]
+  } },
+  { name: "Taarak Mehta ka Ooltah Chashma", questions: {
+    10: [
+      {q: "What is the name of Jethalal’s village?", a: "Bhachau"},
+      {q: "What is Dr. Hathi’s first name?", a: "Hansraj"},
+      {q: "Who owns Gada Electronics?", a: "Jethalal Gada"}
+    ],
+    20: [
+      {q: "Who is also known as Fire Brigade?", a: "Taarak Mehta"},
+      {q: "Which society member was trapped in an online scam?", a: "Bhide"},
+      {q: "Which is the best story arc according to me?", a: "Bhootni"}
+    ],
+    50: [
+      {q: "What is Daya’s mother’s name?", a: "Jeevdaya"},
+      {q: "Which society member is from Bhopal?", a: "Popatlal"},
+      {q: "Whose flat do Jethalal and Sodhi bid for?", a: "Chandiramani"}
+    ]
+  } }
 ];
+
+
+// --- JSONBIN.IO LEADERBOARD CONFIG ---
+// TODO: Replace with your own bin ID and API key from jsonbin.io
+const JSONBIN_BIN_ID = '6866934a8960c979a5b67aca';
+const JSONBIN_API_KEY = '$2a$10$UXVh.OF2LOrUi1znDu2mDeb46ETKAqwhNP6/iTabSIf4WogsZp0Uq';
+const JSONBIN_URL = `https://api.jsonbin.io/v3/b/${JSONBIN_BIN_ID}`;
 
 // --- GAME LOGIC ---
 const app = document.getElementById('app');
 
 let state = {
-  phase: 'select-topics', // 'select-topics', 'playing', 'finished'
+  phase: 'enter-name', // 'enter-name', 'select-topics', 'playing', 'finished'
+  playerName: '',
   selectedTopics: [], // array of topic objects
   grid: [], // [{topic, points, question, answered: null|true|false}]
   score: 0,
@@ -39,8 +148,11 @@ let state = {
 function render() {
   app.innerHTML = '';
   renderHeader();
-  if (state.phase === 'select-topics') {
+  if (state.phase === 'enter-name') {
+    renderNameEntry();
+  } else if (state.phase === 'select-topics') {
     renderTopicSelection();
+    renderLeaderboardButton();
   } else if (state.phase === 'playing') {
     renderProgressBar();
     renderGameGrid();
@@ -50,7 +162,49 @@ function render() {
     renderGameGrid();
     renderScore();
     renderGameOver();
+  } else if (state.phase === 'leaderboard') {
+    renderLeaderboard();
   }
+function renderNameEntry() {
+  const div = document.createElement('div');
+  div.className = 'modal-content';
+  div.style.margin = '48px auto';
+  div.style.maxWidth = '400px';
+  div.innerHTML = `
+    <h2 style="color:#43c6ac;">Enter Your Name</h2>
+    <input id="player-name-input" type="text" placeholder="Your name..." maxlength="18" style="padding:12px 18px;font-size:1.15em;border-radius:8px;border:1.5px solid #2ecc71;outline:none;width:80%;max-width:240px;" />
+    <button id="name-continue-btn" class="start-btn" style="margin-top:18px;width:160px;">Continue</button>
+  `;
+  app.appendChild(div);
+  const input = document.getElementById('player-name-input');
+  input.focus();
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') document.getElementById('name-continue-btn').click();
+  });
+  document.getElementById('name-continue-btn').onclick = () => {
+    const name = input.value.trim();
+    if (!name) {
+      input.focus();
+      input.style.borderColor = '#e74c3c';
+      return;
+    }
+    state.playerName = name;
+    state.phase = 'select-topics';
+    render();
+  };
+}
+}
+
+function renderLeaderboardButton() {
+  const btn = document.createElement('button');
+  btn.textContent = 'View Leaderboard';
+  btn.className = 'start-btn';
+  btn.style.marginTop = '18px';
+  btn.onclick = () => {
+    state.phase = 'leaderboard';
+    render();
+  };
+  app.appendChild(btn);
 }
 
 function renderHeader() {
@@ -81,7 +235,7 @@ function renderTopicSelection() {
   ALL_TOPICS.forEach((topic, idx) => {
     const btn = document.createElement('button');
     btn.className = 'topic-btn' + (state.selectedTopics.includes(idx) ? ' selected' : '');
-    btn.innerHTML = `<img src="${SITCOM_LOGOS[topic.name]}" alt="${topic.name} logo" style="height:56px;width:110px;object-fit:contain;vertical-align:middle;background:#fff;padding:4px 8px;border-radius:10px;box-shadow:0 1px 4px #0001;display:block;">`;
+    btn.innerHTML = `<img src="${SITCOM_LOGOS[topic.name]}" alt="${topic.name} logo" style="height:56px;width:110px;object-fit:contain;vertical-align:middle;padding:4px 8px;border-radius:10px;box-shadow:0 1px 4px #0001;display:block;">`;
     btn.onclick = () => {
       if (state.selectedTopics.includes(idx)) {
         state.selectedTopics = state.selectedTopics.filter(i => i !== idx);
@@ -139,7 +293,7 @@ function renderGameGrid() {
   state.selectedTopics.forEach(idx => {
     const th = document.createElement('div');
     th.className = 'header';
-    th.innerHTML = `<img src="${SITCOM_LOGOS[ALL_TOPICS[idx].name]}" alt="${ALL_TOPICS[idx].name} logo" style="height:56px;width:110px;object-fit:contain;vertical-align:middle;background:#fff;padding:4px 8px;border-radius:10px;box-shadow:0 1px 4px #0001;display:block;">`;
+    th.innerHTML = `<img src="${SITCOM_LOGOS[ALL_TOPICS[idx].name]}" alt="${ALL_TOPICS[idx].name} logo" style="height:56px;width:110px;object-fit:contain;vertical-align:middle;padding:4px 8px;border-radius:10px;box-shadow:none;border:none;display:block;">`;
     gridDiv.appendChild(th);
   });
   // 3 rows: 10, 20, 50
@@ -230,13 +384,36 @@ function submitAnswer() {
 
 // ...removed duplicate template string...
 function renderGameOver() {
+  // Only show confetti if the user did NOT lose by 2 incorrect answers
+  if (state.incorrect < 2) {
+    let confetti = document.getElementById('confetti-canvas');
+    if (!confetti) {
+      confetti = document.createElement('canvas');
+      confetti.id = 'confetti-canvas';
+      confetti.style.position = 'fixed';
+      confetti.style.top = 0;
+      confetti.style.left = 0;
+      confetti.style.width = '100vw';
+      confetti.style.height = '100vh';
+      confetti.style.pointerEvents = 'none';
+      confetti.style.zIndex = 2000;
+      document.body.appendChild(confetti);
+    }
+    startConfetti();
+  }
   const div = document.createElement('div');
   div.className = 'status';
   div.innerHTML = `<h2>Game Over!</h2>
     <div>Final Score: <b style='color:#43c6ac;'>${state.score}</b></div>
-    <button id="restart-btn">Play Again</button>`;
+    <div class="gameover-btn-row">
+      <button id="save-score-btn" class="start-btn">Save Score</button>
+      <button id="restart-btn" class="start-btn">Play Again</button>
+    </div>`;
   app.appendChild(div);
   document.getElementById('restart-btn').onclick = () => {
+    stopConfetti();
+    let confetti = document.getElementById('confetti-canvas');
+    if (confetti) confetti.remove();
     state.phase = 'select-topics';
     state.selectedTopics = [];
     state.grid = [];
@@ -246,6 +423,153 @@ function renderGameOver() {
     state.message = '';
     render();
   };
+  document.getElementById('save-score-btn').onclick = () => {
+    document.getElementById('save-score-btn').disabled = true;
+    submitScoreToLeaderboard(state.playerName, state.score);
+  };
+}
+
+
+
+// promptAndSubmitScore is now unused
+
+async function submitScoreToLeaderboard(name, score) {
+  try {
+    // Fetch current leaderboard
+    const res = await fetch(JSONBIN_URL + '/latest', {
+      headers: { 'X-Master-Key': JSONBIN_API_KEY }
+    });
+    const data = await res.json();
+    let leaderboard = (data.record && data.record.leaderboard) ? data.record.leaderboard : [];
+    leaderboard.push({ name, score, date: new Date().toISOString() });
+    leaderboard = leaderboard.sort((a, b) => b.score - a.score).slice(0, 10); // top 10
+    // Update leaderboard
+    await fetch(JSONBIN_URL, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Master-Key': JSONBIN_API_KEY
+      },
+      body: JSON.stringify({ leaderboard })
+    });
+    alert('Score submitted!');
+    state.phase = 'leaderboard';
+    render();
+  } catch (e) {
+    alert('Failed to submit score. Please try again.');
+  }
+}
+
+async function fetchLeaderboard() {
+  try {
+    const res = await fetch(JSONBIN_URL + '/latest', {
+      headers: { 'X-Master-Key': JSONBIN_API_KEY }
+    });
+    const data = await res.json();
+    return (data.record && data.record.leaderboard) ? data.record.leaderboard : [];
+  } catch (e) {
+    return [];
+  }
+}
+
+
+function renderLeaderboard() {
+  app.innerHTML = '';
+  renderHeader();
+  // Leaderboard container overlay
+  const overlay = document.createElement('div');
+  overlay.className = 'leaderboard-overlay';
+  overlay.innerHTML = `
+    <div class="leaderboard-card">
+      <div class="leaderboard-header">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;margin-right:10px;"><circle cx="12" cy="12" r="12" fill="#2ecc71"/><path d="M12 6l2.09 4.26L18 11.27l-3.18 2.73L15.18 18 12 15.77 8.82 18l.36-4-3.18-2.73 3.91-.01L12 6z" fill="#fff"/></svg>
+        <h2>Leaderboard</h2>
+      </div>
+      <div id="leaderboard-list" class="leaderboard-list">Loading...</div>
+      <button class="start-btn leaderboard-back-btn" id="back-btn">Back to Game</button>
+    </div>
+  `;
+  app.appendChild(overlay);
+  document.getElementById('back-btn').onclick = () => {
+    state.phase = 'select-topics';
+    render();
+  };
+  fetchLeaderboard().then(list => {
+    const listDiv = document.getElementById('leaderboard-list');
+    if (!list.length) {
+      listDiv.innerHTML = '<div class="no-scores">No scores yet.</div>';
+      return;
+    }
+    listDiv.innerHTML = `
+      <table class="leaderboard-table">
+        <thead><tr><th>#</th><th>Name</th><th>Score</th><th>Date</th></tr></thead>
+        <tbody>
+          ${list.map((e, i) => `
+            <tr${i === 0 ? ' class="top-score"' : ''}>
+              <td>${i + 1}</td>
+              <td>${e.name}</td>
+              <td>${e.score}</td>
+              <td>${new Date(e.date).toLocaleDateString()}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    `;
+  });
+}
+
+
+// --- Confetti Animation ---
+let confettiActive = false;
+let confettiParticles = [];
+function startConfetti() {
+  confettiActive = true;
+  confettiParticles = [];
+  const canvas = document.getElementById('confetti-canvas');
+  if (!canvas) return;
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  for (let i = 0; i < 120; i++) {
+    confettiParticles.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * -canvas.height,
+      r: 6 + Math.random() * 8,
+      d: 2 + Math.random() * 2,
+      color: confettiColor(),
+      tilt: Math.random() * 10 - 5,
+      tiltAngle: 0,
+      tiltAngleInc: (Math.random() * 0.07) + 0.05
+    });
+  }
+  requestAnimationFrame(drawConfetti);
+}
+function stopConfetti() {
+  confettiActive = false;
+}
+function confettiColor() {
+  const palette = ['#2ecc71','#eafaf1','#43c6ac','#1de9b6','#e74c3c','#31363f'];
+  return palette[Math.floor(Math.random()*palette.length)];
+}
+function drawConfetti() {
+  const canvas = document.getElementById('confetti-canvas');
+  if (!canvas || !confettiActive) return;
+  const ctx = canvas.getContext('2d');
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  for (let i = 0; i < confettiParticles.length; i++) {
+    let p = confettiParticles[i];
+    ctx.beginPath();
+    ctx.ellipse(p.x, p.y, p.r, p.r/2, p.tilt, 0, 2*Math.PI);
+    ctx.fillStyle = p.color;
+    ctx.fill();
+    p.y += p.d;
+    p.tilt += p.tiltAngleInc;
+    if (p.y > canvas.height) {
+      p.x = Math.random() * canvas.width;
+      p.y = -10;
+      p.color = confettiColor();
+    }
+  }
+  if (confettiActive) requestAnimationFrame(drawConfetti);
 }
 
 // --- INIT ---
